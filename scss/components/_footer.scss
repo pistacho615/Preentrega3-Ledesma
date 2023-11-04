@@ -1,0 +1,41 @@
+// header
+
+.titulo {
+	color: $color_4;
+	padding: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.footer {
+	background-color: $background-color_3;
+	display: flex;
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	height: 30px;
+	width: 100%;
+	border: 3px solid black;
+}
+
+
+.telefono {
+	display: flex;
+	flex-direction: row;
+}
+
+.correo {
+	display: flex;
+	flex-direction: row;
+}
+
+
+/* .footer {
+    display: flex;
+    align-items: baseline;
+    border: 3px solid black;
+    width: 100%;
+  
+  } */

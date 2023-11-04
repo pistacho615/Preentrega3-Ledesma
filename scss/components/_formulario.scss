@@ -1,0 +1,9 @@
+.formulario {
+	>form {
+		display: flex;
+		flex-direction: column;
+		width: 20vw;
+		padding-top: 20px;
+		justify-content: flex-end;
+	}
+}
