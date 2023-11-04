@@ -73,6 +73,7 @@ nav {
 	overflow-x: hidden;
 	overflow-y: hidden;
 	display: flex;
+	flex-wrap: wrap;
 	grid-row-start: 2;
 
 	a {
