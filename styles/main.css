@@ -9,8 +9,15 @@ body {
   padding-bottom: 40px;
 }
 body > .header > h1 {
-  color: aliceblue;
+  color: #0b3954;
   font: times;
+}
+
+h2 {
+  justify-content: center;
+  align-self: center;
+  text-decoration: solid;
+  color: aquamarine;
 }
 
 .receta {
@@ -90,8 +97,7 @@ body > .header > h1 {
   }
 }
 .img-container .img-responsive {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   min-height: 100%;
   min-width: 100%;
   margin: 0;
@@ -152,6 +158,42 @@ img {
   flex-direction: column;
 }
 
+.coberturas {
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  width: 350px;
+  margin-top: 200px;
+  margin-left: 50px;
+  background-color: red;
+  justify-content: center;
+  align-self: center;
+}
+.card__img {
+  object-fit: fill;
+  width: 100%;
+  height: 300px;
+}
+.card__body {
+  padding: 1.5rem;
+  background-color: #0b3954;
+}
+.card__list {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+.card__item {
+  padding: 0.3rem 0.5rem;
+  background-color: red;
+  border-radius: 10px;
+  font-size: 0.8rem;
+}
+
 .titulo {
   color: #0b3954;
   padding: 20px;
@@ -208,9 +250,7 @@ nav {
 .nav a {
   text-decoration: none;
   color: red;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+  user-select: none;
   background-color: aliceblue;
   text-decoration: none;
   padding: 10px 15px;
@@ -220,9 +260,7 @@ nav {
   display: inline-block;
 }
 .nav a.navbar-button {
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+  user-select: none;
   background-color: aliceblue;
   text-decoration: none;
   padding: 10px 15px;
@@ -325,10 +363,9 @@ nav {
 }
 
 .mapa {
-  padding-top: 150px;
-  padding-bottom: 350px;
+  padding-top: 100px;
+  padding-bottom: 100px;
   display: flex;
-  align-items: center;
   justify-content: center;
 }
 
@@ -349,4 +386,6 @@ nav {
 }
 #scroll:hover {
   background-color: #0b3954;
-}/*# sourceMappingURL=main.css.map */
+}
+
+/*# sourceMappingURL=main.css.map */

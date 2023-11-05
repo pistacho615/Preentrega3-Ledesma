@@ -16,7 +16,7 @@
 
 <body>
     <div class="header">
-        <img src="" alt="Logo">
+        <img src="/img/favicon.ico" alt="Logo">
         <h1>Contacto</h1>
 
 
@@ -46,6 +46,17 @@
     <h1 class="titulo">
         Encontranos de la manera mas rapida y sencilla!
     </h1>
+    <div>
+        <h2>
+            CONTACTANOS
+        </h2>
+        <p>
+
+            Podés enviarnos cualquier duda o consulta. Nos caracterizamos por una exclusiva atención al público, por lo
+            que tu opinión nos importa.
+        </p>
+    </div>
+
 
     <div class="mapa">
         <iframe
@@ -55,10 +66,28 @@
 
     </div>
 
-    <div>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci itaque nam cupiditate ducimus praesentium sunt
-        provident optio consequatur quod saepe, quasi, cumque id mollitia quas exercitationem labore, sint nulla? Non.
-    </div>
+    <section>
+
+        <div class="card">
+            <img class="card__img" src="/img/entrega.png" alt="envios">
+
+            <div class="card__body">
+
+                <ul class="card__list">
+                    <li class="card__item"> Envios sin cargo</li>
+                    <li class="card__item"> Retiro de recetas</li>
+                    <li class="card__item"> Pagos online</li>
+                </ul>
+
+                <p class="card__text">En Farmacia PACLED nos encargamos de que la medicacion te llegue sin que tengas
+                    que moverte.</p>
+
+            </div>
+
+
+        </div>
+
+    </section>
 
     <div class="formulario">
 
@@ -68,20 +97,25 @@
 
         <form name="data" method="post" action="/send">
 
-            <input type="email" name="email" placeholder="dejanos tu email">
+            <input type="email" name="email" placeholder="Dejanos tu email">
             <input type="submit" value="Enviar">
 
 
         </form>
         <form name="data" method="post" action="/send">
 
-            <input type="tel" name="telefono" placeholder="dejanos tu celular">
+            <input type="tel" name="telefono" placeholder="Dejanos tu celular">
+            <input type="submit" value="Enviar">
+
+            <textarea name="comentarios" cols="30" rows="5"
+                placeholder="Dejanos tus comentarios y/o sugerencias"></textarea>
             <input type="submit" value="Enviar">
 
         </form>
 
 
     </div>
+
 
 
     <div class="telefono">
