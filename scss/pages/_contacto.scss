@@ -36,3 +36,36 @@
 
 
 }
+
+
+.tarjeta {
+    width: 600;
+    background-color: $background-color_3;
+    justify-content: center;
+    align-self: center;
+
+
+    &__body {
+        padding: 1.5rem;
+        background-color: $background-color_2;
+    }
+
+    &__list {
+        display: flex;
+        list-style: none;
+        gap: 1rem;
+        margin-bottom: 1rem;
+        font-weight: bold;
+    }
+
+
+
+    &__item {
+        padding: .3rem .5rem;
+        background-color: $color_2;
+        border-radius: 10px;
+        font-size: .8rem;
+    }
+
+
+}

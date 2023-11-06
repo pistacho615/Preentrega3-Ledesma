@@ -15,4 +15,33 @@ $background-color_4: #840705;
 
 }
 
+body {
+	>.header {
+		>h1 {
+			color: $color_4;
+			font: times;
+		}
+	}
+
+	font-family: $font-family_1;
+	background-color: $background-color_3;
+	padding-bottom: 40px;
+}
+
+
 $large: 1200px;
+
+p {
+	font-size: 20px;
+	text-indent: 20px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+	justify-content: center;
+	align-self: center;
+	text-decoration: solid;
+	color: aquamarine;
+	display: flex;
+
+}
