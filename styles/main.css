@@ -13,11 +13,18 @@ body > .header > h1 {
   font: times;
 }
 
+p {
+  font-size: 20px;
+  text-indent: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 h2 {
   justify-content: center;
   align-self: center;
   text-decoration: solid;
   color: aquamarine;
+  display: flex;
 }
 
 .receta {
@@ -130,9 +137,30 @@ label i {
   flex-direction: column;
 }
 
-.coberturas {
-  display: flex;
-  flex-direction: column;
+.responsive-list {
+  list-style: disc;
+  padding: 100px;
+  margin: 0;
+}
+
+.responsive-list li {
+  border-bottom: 1px solid black;
+  padding: 10px;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 768px) {
+  .responsive-list li {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
+.responsive-list li:nth-child(odd) {
+  background-color: red;
+}
+
+.responsive-list li:hover {
+  background-color: #0b3954;
 }
 
 .intro {
@@ -156,7 +184,7 @@ label i {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  font-size: 30px;
+  font-size: 25px;
   text-decoration: overline;
 }
 

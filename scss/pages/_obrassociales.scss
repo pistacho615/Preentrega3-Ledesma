@@ -7,4 +7,67 @@
 }
 
 
-.coberturas {}
+
+.responsive-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.responsive-list li {
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    font-size: 16px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .responsive-list li {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+
+.responsive-list li:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+
+.responsive-list li:hover {
+    background-color: #dcdcdc;
+}
+
+
+
+
+
+
+
+
+
+
+
+// <!-- <li>Poder judicial</li>
+// <li>Sancor salud</li>
+// <li>Swiss medical</li>
+// <li>Medicus</li>
+// <li>Medife</li>
+// <li>Avalian</li>
+// <li>Iosfa</li>
+// <li>Colegio de escribanos de la provincia</li>
+// <li>Luis Pasteur</li>
+// <li>Hospital Britanico</li>
+// <li>Hospital Aleman</li>
+// <li>Casa</li>
+// <li>Comei</li>
+// <li>Cemic</li>
+// <li>Dasmi</li>
+// <li>Dasuten</li>
+// <li>Omint</li>
+// <li>Osecac</li>
+// <li>Osmata</li>
+// <li>Premedic</li>
+// <li>Union Personal</li>
+// <li>Hospital Austral</li>
+// <li>Entre otras</li> -->
