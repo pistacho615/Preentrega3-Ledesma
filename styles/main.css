@@ -35,14 +35,6 @@ h2 {
   margin-left: 30px;
 }
 
-.lista {
-  display: flex;
-  list-style: none;
-  gap: 25px;
-  margin: 0;
-  justify-content: flex-end;
-}
-
 .img-banner {
   display: flex;
   flex-direction: row;
@@ -78,17 +70,6 @@ h2 {
   min-width: 100%;
   margin: 0;
   padding: 0;
-}
-
-#toggler {
-  display: none;
-}
-
-label {
-  display: none;
-}
-label i {
-  color: red;
 }
 
 .turno {
@@ -217,6 +198,43 @@ label i {
   background-color: #0b3954;
 }
 
+.list {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+  margin: 0;
+  justify-content: flex-end;
+}
+
+#toggler {
+  display: none;
+}
+
+label {
+  display: none;
+}
+label i {
+  color: #0b3954;
+}
+
+@media screen and (max-width: 800px) {
+  .menu {
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+  }
+  label {
+    display: inline-flex;
+  }
+  #toggler:checked ~ .menu {
+    max-height: 100%;
+  }
+  .list {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+}
 .formulario > form {
   display: flex;
   flex-direction: column;
@@ -338,17 +356,17 @@ img {
 
 .cards-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+  gap: 10px;
 }
 
 .card {
-  width: calc(30% - 10px);
-  margin-top: 10px;
-  margin-right: 0px;
+  flex: 1;
   background-color: red;
-  justify-content: center;
-  align-self: center;
+  margin: 5px;
   transition: transform 0.2s;
+  border-radius: 10px;
 }
 .card:hover {
   transform: scale(1.05);
@@ -363,6 +381,11 @@ img {
   color: red;
 }
 
+@media screen and (max-width: 768px) {
+  .cards-container {
+    flex-direction: column;
+  }
+}
 .tarjeta {
   width: 600;
   background-color: red;

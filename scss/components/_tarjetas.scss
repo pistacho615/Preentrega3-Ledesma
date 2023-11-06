@@ -1,17 +1,16 @@
 .cards-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    gap: 10px;
 }
 
 .card {
-    width: calc(30% - 10px);
-    margin-top: 10px;
-    margin-right: 0px;
+    flex: 1;
     background-color: $background-color_3;
-    justify-content: center;
-    align-self: center;
+    margin: 5px;
     transition: transform 0.2s;
-
+    border-radius: 10px;
 
     &:hover {
         transform: scale(1.05);
@@ -29,14 +28,17 @@
     }
 }
 
-
+@media screen and (max-width: 768px) {
+    .cards-container {
+        flex-direction: column;
+    }
+}
 
 .tarjeta {
     width: 600;
     background-color: $background-color_3;
     justify-content: center;
     align-self: center;
-
 
     &__body {
         padding: 1.5rem;
@@ -52,8 +54,6 @@
         color: $color_2;
     }
 
-
-
     &__item {
         padding: .3rem .5rem;
         background-color: $color_2;
@@ -61,6 +61,4 @@
         font-size: .8rem;
         color: $color_2;
     }
-
-
 }
