@@ -196,6 +196,7 @@ h2 {
 }
 .nav a:hover {
   background-color: #0b3954;
+  transition: 1s;
 }
 
 .list {
