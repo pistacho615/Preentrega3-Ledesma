@@ -35,7 +35,7 @@ h2 {
   margin-left: 30px;
 }
 
-.list {
+.lista {
   display: flex;
   list-style: none;
   gap: 25px;
@@ -360,6 +360,7 @@ img {
 .card__text {
   font-size: 0.9rem;
   font-weight: bold;
+  color: red;
 }
 
 .tarjeta {
@@ -378,12 +379,14 @@ img {
   gap: 1rem;
   margin-bottom: 1rem;
   font-weight: bold;
+  color: red;
 }
 .tarjeta__item {
   padding: 0.3rem 0.5rem;
   background-color: red;
   border-radius: 10px;
   font-size: 0.8rem;
+  color: red;
 }
 
 .turno {
